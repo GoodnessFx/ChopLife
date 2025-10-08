@@ -1,10 +1,12 @@
 {
   "expo": {
     "name": "ChopLife",
+    "slug": "choplife",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
+    "runtimeVersion": "1.0.0",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
@@ -60,11 +62,12 @@
     },
     "extra": {
       "router": {
-        "origin": false
+        "origin": false,
+        "sitemap": false
+      },
+      "eas": {
+        "projectId": "2bf5d906-b3d5-48c5-b600-a9f76f02a600"
       }
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
     }
   }
 }
