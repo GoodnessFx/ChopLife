@@ -1,10 +1,10 @@
-# EaseRent - Deployment Guide
+# ChopLife - Deployment Guide
 
 ## Environment Variables Required
 
 Create a `.env` file in the root directory with the following variables:
 
-```bash
+```bashC
 # Database Configuration
 DATABASE_URL=postgresql://username:password@localhost:5432/easerent
 
