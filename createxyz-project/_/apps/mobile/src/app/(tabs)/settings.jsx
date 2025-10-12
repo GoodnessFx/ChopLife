@@ -319,7 +319,7 @@ export default function Settings() {
             textAlign: 'center',
             lineHeight: 20 
           }}>
-            EaseRent helps you save for rent with automatic round-ups and smart savings.
+           ChopLife helps you save effortlessly by rounding up your purchases.
           </Text>
           <Text style={{ 
             fontSize: 12, 
@@ -327,7 +327,7 @@ export default function Settings() {
             textAlign: 'center',
             marginTop: 8 
           }}>
-            Made with ❤️ for renters everywhere
+            Made with ❤️ for anyone who wants to ChopLife - IG
           </Text>
         </View>
       </ScrollView>
