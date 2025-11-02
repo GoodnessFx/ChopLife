@@ -20,6 +20,7 @@ import {
 } from "lucide-react-native";
 import { useAuth } from "@/utils/auth/useAuth";
 import useUser from "@/utils/auth/useUser";
+import SavingsChart from "@/components/charts/SavingsChart";
 
 export default function Dashboard() {
   const insets = useSafeAreaInsets();
@@ -305,16 +306,7 @@ export default function Dashboard() {
               Savings Progress
             </Text>
           </View>
-          <View style={{
-            height: 200,
-            width: "100%",
-            backgroundColor: "#F1F5F9",
-            borderRadius: 12,
-            alignItems: "center",
-            justifyContent: "center"
-          }}>
-            <Text style={{ color: "#64748B" }}>Chart placeholder</Text>
-          </View>
+          <SavingsChart data={savingsData} />
         </View>
 
         {/* Quick Actions */}
@@ -346,15 +338,11 @@ export default function Dashboard() {
                 shadowRadius: 8,
                 elevation: 3,
               }}
+              onPress={() => router.push('/add-money?accountId=savings&accountName=Savings Account')}
             >
               <Plus size={24} color="#F97316" />
               <Text
-                style={{
-                  fontSize: 14,
-                  fontWeight: "500",
-                  color: "#1E293B",
-                  marginTop: 8,
-                }}
+                style={{ fontSize: 14, fontWeight: "500", color: "#1E293B", marginTop: 8 }}
               >
                 Add Money
               </Text>
